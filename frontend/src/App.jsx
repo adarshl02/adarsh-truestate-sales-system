@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_BASE_URL = "https://adarsh-truestate-sales-system-backend.onrender.com"; // later change to your deployed backend
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL
 
 function App() {
   const [sales, setSales] = useState([]);
